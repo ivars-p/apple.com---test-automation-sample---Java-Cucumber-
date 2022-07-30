@@ -12,8 +12,11 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber-java.version>7.5.0</cucumber-java.version>
-        <cucumber-testng.version>6.1.1</cucumber-testng.version>
+        <cucumber-java.version>6.1.1</cucumber-java.version>
+        <cucumber-picocontainer.version>7.0.0</cucumber-picocontainer.version>
+        <selenium-java.version>4.3.0</selenium-java.version>
+        <webdrivermanager.version>5.2.2</webdrivermanager.version>
+        <slf4j-simple.version>1.7.36</slf4j-simple.version>
     </properties>
 
     <dependencies>
@@ -26,8 +29,31 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber-testng.version}</version>
+            <version>${cucumber-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber-picocontainer.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
         </dependency>
     </dependencies>
-    
 </project>
